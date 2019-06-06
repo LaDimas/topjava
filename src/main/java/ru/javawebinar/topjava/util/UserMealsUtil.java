@@ -35,7 +35,7 @@ public class UserMealsUtil {
                 .collect(Collectors.toList());
     }
 
-    public static List<UserMealWithExceed> getFilteredWithExceededByCircle(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
+    public static List<UserMealWithExceed> getFilteredWithExceededByCycle(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
 
         Map<LocalDate, Integer> caloriesSumPerDate = new HashMap<>();
         for (UserMeal meal : mealList) {
