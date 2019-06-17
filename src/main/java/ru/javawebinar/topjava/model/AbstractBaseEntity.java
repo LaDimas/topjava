@@ -7,6 +7,10 @@ public abstract class AbstractBaseEntity {
         this.id = id;
     }
 
+    public AbstractBaseEntity() {
+
+    }
+
     public void setId(Integer id) {
         this.id = id;
     }
@@ -23,4 +27,5 @@ public abstract class AbstractBaseEntity {
     public String toString() {
         return getClass().getSimpleName() + ":" + id;
     }
+
 }
