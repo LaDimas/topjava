@@ -94,8 +94,6 @@ public class MealServiceTest {
         Meal newMeal = new Meal(LocalDateTime.of(2019, Month.MAY, 1, 10, 0), "Завтрак", 500);
         Meal created = service.create(newMeal, USER_ID);
         newMeal.setId(created.getId());
-        //assertEquals(created, newMeal);
-        //assertEquals(service.getAll(USER_ID).size(), 7);
         assertThat(created).isEqualTo(newMeal);
         assertThat(service.getAll(USER_ID).size()).isEqualTo(7);
     }
